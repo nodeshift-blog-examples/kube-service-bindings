@@ -22,26 +22,40 @@
 
 1.  Create an account on mongoDB Atlas, if you don't already have one visit below link to register https://www.mongodb.com/cloud/atlas/register
 1.  Sign in
-1.  Create a Project by clicking on Projects (in the left sidebar) -> New Project -> Choose a name for your project -> Create Project
-1.  Create a mongoDB database inside this project by clicking on the Build Database button and on the next page click on the Create button on the FREE plan -> create cluster. Leave the values to default while creating the cluster.
-1.  Create a user for the mongoDB database: Database Access (left sidebar) -> Add new Database user -> Choose a username and password -> Create user
+1.  Create a new Project
+    1.  Click on Projects (in the left sidebar).
+    1.  Click New Project.
+    1.  Choose a name for your project and click "Next".
+    1.  Accept the defaults and click the "Create Project" button.
+1.  Create a MongoDB Database
+    1.  Click the "Build Database" button.
+    1.  Choose the FREE plan and click "Create"
+    1.  Accept the defaults and click "Create Cluster".
+1.  Create a User for the MongoDB Database
+    1.  Click on Database Access (left sidebar)
+    1.  Click "Add New Database User"
+    1.  Enter a username and password.
+    1.  In the **Database User Privileges** section add a buit-in rule of "read and write to any database".
+1.  Update Network Access
+    1. Click on Network Access (left sidebar)
+    1. Click "Add IP Address"
+    1. Click "Allow Access From Anywhere" and then Confirm
 
 ## Allowing access between OpenShift and mongoDB Database with "OpenShift Database Access operator".
 
-1.  Select a project/namespace you would like to work on, by selecting developer (top of left sidebar) -> Topology -> Project -> (on dropdown) select your project
-1.  Select Administrator perspective (Top of left sidebar)
+1.  Select the Administrator perspective (Top of left sidebar)
 1.  Expand the Data Services navigation menu (bottom of left sidebar), and click Database Access.
-1.  Click on the Configuration button (upper right) -> Select “Import Database provider Account”
+1.  Click on the Configuration button (upper right) and Select “Import Database provider Account”
+1.  Import Database Provider Account
+    1.  Select **MongoDB Atlas Cloud Database Service** from the Database provider drop down menu
+    1.  Enter the **Account Credentials***
+    1.  Click "Import".
 
-1.  On the form, select first MongoDB Atlas Cloud Database on the Database provider drop down menu and then fill the rest fields -> Import. For additional help on filling out the Account Credentials, follow below with detailed instructions for each field of the form. https://access.redhat.com/documentation/en-us/red_hat_openshift_database_access/1/html-single/quick_start_guide/index#find-your-mongodb-atlas-account-credentials_rhoda-qsg
+\* _For additional help on filling out the Account Credentials, follow [these detailed instructions](https://access.redhat.com/documentation/en-us/red_hat_openshift_database_access/1/html-single/quick_start_guide/index#find-your-mongodb-atlas-account-credentials_rhoda-qsg) for each field of the form._
 
-## Deploying mongoDB database as Cloud-Hosted Database
+## Deploying the MongoDB Database as a Cloud-Hosted Database
 
-1.  Visit topology view, by selecting developer perspective (left sidebar menu) -> topology
-1.  Validate you have selected to deploy the DB on the correct project/namespace. For further instructions on selecting a namespace please follow below link.
-
-    - [Project/namespace selection instructions](../../README.md#select-namespaceproject)
-
+1.  Visit Topology view, by selecting developer perspective (left sidebar menu) then **Topology**
 1.  Click on +Add button (left sidebar menu)-> Cloud-Hosted Database -> MongoDB Atlas Cloud Database Service -> Add to Topology -> Select your Database instance -> Add to topology -> Continue
 1.  Upon successful connection you are taken to the Topology view, where the Cloud-Hosted Database is deployed and visible on the Topology view.
 
