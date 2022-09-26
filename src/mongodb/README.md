@@ -46,6 +46,8 @@
 1.  Select the **Administrator** perspective _(Top of left sidebar)_
 1.  Expand the **Data Services** navigation menu _(bottom of left sidebar)_, and click **Database Access**.
 1.  Click on the **Configuration button** _(upper right)_ and Select **Import Database provider Account**
+    1.  If this is your first time, you might see a message that you need to create a policy first.  If so, click the **create policy** link and just accept the defaults
+    ![Policy Warning](../../readme-assets/workshop_sandbox_policy_warning.png)
 1.  Import Database Provider Account
     1.  Select **MongoDB Atlas Cloud Database Service** from the **Database provider** drop down menu
     1.  Enter the **Account Credentials***
