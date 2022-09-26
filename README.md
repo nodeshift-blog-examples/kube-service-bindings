@@ -208,7 +208,7 @@ By visiting developer mode on topology, you should be able to see the postgres c
 1. Switch to developer mode
 1. Select +Add from the sidebar menu
 1. Click on Import from Git
-1. On Git Repo URL set `https://github.com/nodeshift/kube-service-bindings-examples.git`
+1. On Git Repo URL set `https://github.com/nodeshift-blog-examples/kube-service-bindings-examples.git`
 1. Click on show advanced Git options -> Context Dir set `/src/<app-folder>` -> Create
 
 ## Connecting Node.js app using service binding operator
