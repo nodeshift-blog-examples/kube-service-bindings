@@ -16,7 +16,7 @@ try {
 
 const mongoClient = new MongoClient(url, connectionOptions);
 
-const dbName = process.env.MONGO_DB_NAME || "admin";
+const dbName = process.env.MONGO_DB_NAME || "Cluster0";
 const collectionName = "products";
 let db;
 
