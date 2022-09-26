@@ -22,6 +22,10 @@
 
 1.  Create an account on **MongoDB Atlas**, if you don't already have one visit below link to register https://www.mongodb.com/cloud/atlas/register
 1.  Sign in
+1. Select Organization
+   1. On the upper left corner, next to the gear icon, expand the dropdown menu and choose **View All Organizations**
+   1. Click the **Organizations** button in the left sidebar and then click the organization in which you would like to create your database
+   
 1.  Create a new Project
     1.  Click on **Projects** _(in the left sidebar)_.
     1.  Click **New Project**.
